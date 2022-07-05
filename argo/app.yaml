@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-spring-petclinic
+  name: spring-petclinic
   namespace: openshift-gitops
 spec:
   destination:
@@ -12,7 +12,7 @@ spec:
     directory:
       recurse: true
     path: app
-    repoURL: https://github.com/siamaksade/openshift-gitops-getting-started.git
+    repoURL: https://github.com/okkyhtf/openshift-gitops-getting-started.git
     targetRevision: main
   syncPolicy:
     automated:
